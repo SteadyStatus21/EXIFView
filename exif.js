@@ -35,6 +35,35 @@
             // memory usage if you're parsing a lot of files and saving the
             // tags.
             delete tags['MakerNote'];
+            delete tags['Orientation'];
+            delete tags['XResolution'];
+            delete tags['YResolution'];
+            delete tags['ResolutionUnit'];
+            delete tags['Images'];
+            delete tags['MPEntry'];
+            delete tags['NumberOfImages'];
+            delete tags['MPFVersion'];
+            delete tags['Rating'];
+            delete tags['about'];
+            delete tags['InteroperabilityVersion'];
+            delete tags['InteroperabilityIndex'];
+            delete tags['GPSVersionID'];
+            delete tags['CustomRendered'];
+            delete tags['CFAPattern'];
+            delete tags['Interoperability IFD Pointer'];
+            delete tags['CompressedBitsPerPixel'];
+            delete tags['ComponentsConfiguration'];
+            delete tags['DateTimeDigitized'];
+            delete tags['ExifVersion'];
+            delete tags['GPS Info IFD Pointer'];
+            delete tags['Exif IFD Pointer'];
+            delete tags['YCbCrPositioning'];
+            delete tags['Color Components'];
+            delete tags['Bits Per Sample'];
+            delete tags['FileSource'];
+            delete tags['SubSecTimeDigitized'];
+            delete tags['SubSecTimeOriginal'];
+            
 
             // If you want to extract the thumbnail you can use it like
             // this:
