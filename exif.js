@@ -77,6 +77,10 @@
             delete tags['Profile Version'];
             delete tags['Preferred CMM type'];
             delete tags['FocalLengthIn35mmFilm'];
+            delete tags['JFIF Version'];
+            delete tags['Resolution Unit'];
+            delete tags['SubSecTime'];
+            
             
             
 
