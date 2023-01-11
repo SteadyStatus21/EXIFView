@@ -68,6 +68,17 @@
             delete tags['FlashpixVersion'];
             delete tags['PixelXDimension'];
             delete tags['PixelYDimension'];
+            delete tags['JFIF Thumbnail Width'];
+            delete tags['JFIF Thumbnail Height'];
+            delete tags['FocalLengthIn35mmFilm'];
+            delete tags['RatingPercent'];
+            delete tags['Connection Space'];
+            delete tags['Rendering Intent'];
+            delete tags['Profile Version'];
+            delete tags['Preferred CMM type'];
+            delete tags['FocalLengthIn35mmFilm'];
+            
+            
 
             // If you want to extract the thumbnail you can use it like
             // this:
