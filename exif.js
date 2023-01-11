@@ -63,7 +63,11 @@
             delete tags['FileSource'];
             delete tags['SubSecTimeDigitized'];
             delete tags['SubSecTimeOriginal'];
-            
+            delete tags['RecommendedExposureIndex'];
+            delete tags['LightSource'];
+            delete tags['FlashpixVersion'];
+            delete tags['PixelXDimension'];
+            delete tags['PixelYDimension'];
 
             // If you want to extract the thumbnail you can use it like
             // this:
