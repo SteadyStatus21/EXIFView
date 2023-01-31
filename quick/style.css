@@ -1,0 +1,193 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+
+body{
+    background: rgb(0,0,0);
+}
+.wraptitle{
+  color: white;
+  width: 50%;
+  word-break: break-all;
+  display: block; /* enable flexbox layout */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 2.5rem;
+  margin-right: -2.5rem;
+  margin-top: 10rem;
+}
+
+
+.github {
+    display: block;
+    margin-bottom: 2.5rem;
+}
+
+.source-code {
+    margin-bottom: 1.5rem;
+}
+
+.source-code[data-initialize] .show-button {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    margin-bottom: 1rem;
+    
+}
+
+.error {
+    background: lightcoral;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.thumbnail {
+    margin-top: 1.5rem;
+}
+
+input[type="file"] {
+    margin-top: 1rem;
+    display: flex; /* enable flexbox layout */
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1024px) {
+    .github {
+        background: black;
+        border-bottom-width: 1px;
+        border-color: #fff;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-style: solid;
+        border-top-width: 1px;
+        box-shadow: 0 0 10px 3px #000;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: bold;
+        letter-spacing: .04em;
+        line-height: 1.5;
+        padding: 6px 60px;
+        position: fixed;
+        right: 60px;
+        text-transform: none;
+        top: 60px;
+        transform: translateX(50%) translateY(-50%) rotateZ(45deg);
+    }
+}
+
+table.tags {
+    background: black; /* change background color to black */
+    color: white; /* change text color to white */
+    border-collapse: collapse; /* remove the lines between the columns */
+    border: none;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    width: 50%; /* set the table width to 50% */
+    margin: 0; /* remove the margins */
+    float: right;
+    margin-top: -35rem;
+    font-size: 36px;
+}
+
+table.tags th, table.tags td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 0 !important;
+}
+/* Add this to the other elements class */
+.other-elements {
+    width: 50%;
+}
+table.tags th{
+  float:right;
+}
+table.tags td{
+  padding-top: 1rem;
+  line-height: 1;
+}
+
+input[type="submit"] {
+  display: none;
+}
+
+input[type="file"] {
+    border-radius: 25px;
+    padding: 12px 30px;
+    background-color: #f2f2f2;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.realUploadButton{
+font-weight: bold;
+font-size: 14px;
+color: #fff;
+background-color: #0066CC;
+padding: 10px 30px;
+border: 2px solid #0066cc;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+border-radius: 30px;
+transition : 583ms;
+margin: auto;
+display: inline-block;
+align-items: center;
+cursor: pointer;
+justify-content: center;
+transform: translateX(50%) translateY(30%);
+}
+
+.realUploadButton:hover{
+
+transition : 583ms;
+padding: 10px 30px;
+transform : translateY(30%) translateX(50%);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+td.exposure-time {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+td.m-or-a {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+td.iso-speed {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+td.aperture {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+td.model {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+td.focal-length{
+  font-size: 18px;
+  font-weight: normal;
+}
+
+td.value {
+    display: block !important;
+    float: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
