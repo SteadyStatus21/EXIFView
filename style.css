@@ -2,9 +2,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    color: #444;
+}
 body.container {
     padding-bottom: 6rem;
     padding-top: 6rem;
+    border: 8px;
+    border-radius: 8px;
 }
 
 .github {
@@ -42,6 +51,10 @@ form {
 }
 
 input[type="file"] {
+    background-color: #f5f5f5;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    padding: 8px;
     margin-top: 1rem;
 }
 
@@ -67,4 +80,87 @@ input[type="file"] {
         top: 60px;
         transform: translateX(50%) translateY(-50%) rotateZ(45deg);
     }
+}
+/* Add Animation to the CSS */
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+h5{
+    font-size:1.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+form{
+    animation: fadeIn 1s ease-in-out;
+}
+
+#thumbnail{
+    animation: fadeIn 1s ease-in-out;
+}
+
+table{
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+a {
+   color: #0080FF;
+   text-decoration: none;
+}
+a:hover{
+   color: #0040FF;
+}
+table {
+   border-collapse: separate;
+   width: 100%;
+   font-size: 1.5em;
+   border: 8px;
+   border-radius: 12px;
+   border-spacing: 0;
+}
+th, td {
+   text-align: left;
+   padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+td {
+    border-radius: 8px;
 }
