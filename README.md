@@ -1,6 +1,6 @@
 # Image Metadata Extractor
 
-![GitHub](https://img.shields.io/github/license/your-username/image-metadata-extractor)
+[![GitHub](https://img.shields.io/github/license/your-username/image-metadata-extractor)](https://img.shields.io/github/contributors/SteadyStatus21/EXIFView)
 
 ## Overview
 
