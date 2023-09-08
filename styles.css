@@ -1,0 +1,128 @@
+body {
+    font-family: Roboto Mono, Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#previewWindow {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+	background-color: #222;
+	z-index: 1;
+	
+}
+
+#zoomControls {
+	align-content: center;
+	position: absolute;
+	bottom: 0;
+	align-self: flex-end;
+	z-index: 2;
+}
+.custom-file-input {
+    display: inline-block;
+    background-color: #6200EE; /* Android 12's purple */
+	width: 30%;
+	text-align: center;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+.custom-file-input:hover {
+    background-color: #3700B3; /* Darker purple on hover */
+}
+
+#fileInput {
+    display: none; /* Hide the default file input */
+}
+
+.material-icons {
+    vertical-align: middle;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+
+.container {
+    display: flex;
+    min-width: 80%;
+    height: 80vh;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+	border-radius: 15px 15px 15px 15px;
+}
+
+#imagePreview {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+    overflow: hidden;
+	background-color: #222;
+}
+
+#previewImage {
+	display: none;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+#metadata {
+    flex: 1;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+    background-color: #444;
+	overflow: auto;
+}
+
+#metadata h2 {
+	text-align: center;
+	font-size: 200%;
+}
+
+#metadata #span {
+	text-align: center;
+	border: thin;
+	border-color: white;
+	border-radius: 5px;
+}
+.metadata-value {
+	display: inline-block;
+	background-color: #f2f2f2;
+	padding: 5px 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li strong {
+    font-weight: bold;
+    margin-right: 10px;
+}

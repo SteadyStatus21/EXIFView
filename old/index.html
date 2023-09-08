@@ -1,0 +1,61 @@
+<!doctype html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>EXIFView Tool | SteadyStatus21</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css" integrity="sha256-Ro/wP8uUi8LR71kwIdilf78atpu8bTEwrK5ZotZo+Zc=" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://raw.githubusercontent.com/SteadyStatus21/EXIFView/main/tags/analytics.js?id=G-MPKTS1JZG5"></script>
+   <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+     gtag('config', 'G-MPKTS1JZG5');
+   </script>
+    <body class="container">
+        <h1>Image EXIF Data Viewer</h1>
+        <br><h2>Created by SteadyStatus21</h2>
+       <h3>Want to try out QuickEXIF? Visit it <a href="https://steadystatus21.github.io/QuickEXIF/">here</a>!</h3>
+        <h3>Guide? Click <a href="https://steadystatus21.github.io/EXIFView/guide/">here</a>!</h3>
+       <h5>EXIFReader from mattiasw<h5>
+        <form>
+            <label>
+                Choose an image file from your computer:<br>
+                <input type="file" id="file" name="file" accept="image/*">
+            </label>
+            <label>
+                <br>
+            </label>
+            <input type="submit" value="Load file">
+        </form>
+
+        <div class="error hidden"></div>
+
+        <img id="thumbnail" src="" alt="Thumbnail of image." class="thumbnail hidden">
+
+        <table class="tags">
+            <thead>
+                <tr>
+                    <th>Meta Name</th>
+                    <th>Meta Value</th>
+                </tr>
+            </thead>
+            <tbody id="exif-table-body">
+            </tbody>
+        </table>
+
+        <script src="utils.js"></script>
+        <script src="exif-reader.js"></script>
+        <script src="exif.js"></script>
+    </body>
+</html>
